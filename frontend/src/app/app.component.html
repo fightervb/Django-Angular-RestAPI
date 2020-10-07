@@ -1,0 +1,21 @@
+<h1>project names</h1>
+<br><br>
+<h2>{{display}}</h2>
+<br><br>
+
+<button (click)="getData()">Get Data</button>
+<br><br>
+
+<input type="text" name="project" placeholder="enter project name" #box>
+<br><br>
+<button (click)="postData(box.value)">Post Data</button>
+
+<div *ngFor="let d of data | async">
+
+  <h2>{{d.name}}</h2>
+
+
+</div>
+
+
+
